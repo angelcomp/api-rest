@@ -29,19 +29,19 @@ This project was developed using the following techs:
 **Before we start, you will need to install [Node](https://nodejs.org/en) and [Python](https://www.python.org). Also a IDE, you can choose only for [Visual Studio Code](https://code.visualstudio.com) or [Pycharm](https://www.jetbrains.com/pt-br/pycharm/) too.**
 Inside the project you can see 3 folders:
  - **node:** Server written with Express to build a local API;
-	 Run the following commands:
-	``npm install``
-	``npm run dev``
-	The Node server will start and publish a JSON with some random data mocked inside the code. The endpoint will be available in the link bellow, you can just copy and paste in your browser:
+	 Run the following commands: <br> 
+	``npm install`` <br>
+	``npm run dev`` <br>
+	The Node server will start and publish a JSON with some random data mocked inside the code. The endpoint will be available in the link bellow, you can just copy and paste in your browser: <br>
 	``http://localhost:5000/node``
  - **python:** Server written with Flask to build a local API;
-	 Run the following commands:
+	 Run the following commands: <br>
 	``?``
 	
  - **nodepy:** A simple Frontend to see data fetched from both servers above.
-	 Run the following commands:
-     ``npm install``
-	 ``npm start``
+	 Run the following commands: <br>
+     ``npm install`` <br>
+	 ``npm start`` <br>
 	 Running the last command will automatically open your browser and show the React entry page.
 
 
