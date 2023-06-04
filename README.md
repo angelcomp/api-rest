@@ -36,9 +36,10 @@ Inside the project you can see 3 folders:
 	``http://localhost:5000/node``
  - **python:** Server written with Flask to build a local API;
 	 Run the following command: <br>
-	``python server.py``
+	``python server.py`` <br>
 	The Python server uses web scraping techniques to retrieve data from a website. It will start and be available at: <br>
-	``http://localhost:5000/python`` 
+	``http://localhost:5000/python`` <br>
+	
 	The `server.py` file contains the implementation of the Python server using Flask. The server has a single route `/python` which handles the **GET** request. Inside the route handler, it calls the `web_scraping_github` function to perform web scraping on the GitHub page. This function uses Selenium WebDriver with Chrome to navigate to the GitHub page, extract the text content of the `h1` and `p` elements, and return the extracted data as a **JSON** response. The server sets the necessary headers for enabling CORS. <br> 
 
 	Both the Node server and Python server have the necessary headers set to allow Cross-Origin Resource Sharing (CORS), enabling communication with the React frontend. <br>
@@ -52,6 +53,7 @@ Inside the project you can see 3 folders:
 	- Generates a dictionary containing the extracted text.
 	- Converts the Python dictionary to JSON format.
 	- Returns the JSON data. <br> <br>
+	
 	The `app.after_request` decorator in the Flask server sets the necessary headers for enabling CORS on all routes.
 	
  - **nodepy:** A simple Frontend to see data fetched from both servers above.
