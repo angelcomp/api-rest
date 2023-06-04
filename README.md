@@ -52,7 +52,7 @@ Inside the project you can see 3 folders:
 	- Closes the browser.
 	- Generates a dictionary containing the extracted text.
 	- Converts the Python dictionary to JSON format.
-	- Returns the JSON data. <br> <br>
+	- Returns the JSON data. <br> 
 	
 	The `app.after_request` decorator in the Flask server sets the necessary headers for enabling CORS on all routes.
 	
