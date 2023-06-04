@@ -41,18 +41,18 @@ Inside the project you can see 3 folders:
 	``http://localhost:5000/python`` 
 	The `server.py` file contains the implementation of the Python server using Flask. The server has a single route `/python` which handles the **GET** request. Inside the route handler, it calls the `web_scraping_github` function to perform web scraping on the GitHub page. This function uses Selenium WebDriver with Chrome to navigate to the GitHub page, extract the text content of the `h1` and `p` elements, and return the extracted data as a **JSON** response. The server sets the necessary headers for enabling CORS. <br> 
 
-Both the Node server and Python server have the necessary headers set to allow Cross-Origin Resource Sharing (CORS), enabling communication with the React frontend. <br>
+	Both the Node server and Python server have the necessary headers set to allow Cross-Origin Resource Sharing (CORS), enabling communication with the React frontend. <br>
 
-The `web_scraping_github` function performs the following steps:
+	The `web_scraping_github` function performs the following steps:
 
-- Configures the browser options for Chrome WebDriver.
-- Opens the GitHub page.
-- Extracts the text content of the h1 and p elements using XPath.
-- Closes the browser.
-- Generates a dictionary containing the extracted text.
-- Converts the Python dictionary to JSON format.
-- Returns the JSON data. <br>
-The `app.after_request` decorator in the Flask server sets the necessary headers for enabling CORS on all routes.
+	- Configures the browser options for Chrome WebDriver.
+	- Opens the GitHub page.
+	- Extracts the text content of the h1 and p elements using XPath.
+	- Closes the browser.
+	- Generates a dictionary containing the extracted text.
+	- Converts the Python dictionary to JSON format.
+	- Returns the JSON data. <br> <br>
+	The `app.after_request` decorator in the Flask server sets the necessary headers for enabling CORS on all routes.
 	
  - **nodepy:** A simple Frontend to see data fetched from both servers above.
 	 Run the following commands: <br>
