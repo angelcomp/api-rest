@@ -1,4 +1,3 @@
-const api = require('axios')
 const express = require('express');
 const app = express();
 const port = 5000; // Porta em que o servidor irá ouvir
@@ -39,17 +38,4 @@ app.get('/node', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}/node`);
 });
-
-
-//--------------------------------------------------
-
-// const axios = require('axios');
-
-// //get data from python
-// axios.get('http://127.0.0.1:5000/python')
-// .then((response) => {
-//   console.log(response.data);
-// })
-
-
 
